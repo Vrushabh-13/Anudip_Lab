@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product&Price</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid lightgreen;
+            text-align: center;
+        }
+        img{
+            width: 80px;
+            height: auto;
+        }
+        .calci {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .submit{
+            margin-top: 22px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color:blue;
+            color:white;
+            border:none;
+        }
+       
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Product & Price</h2>
+        <hr/>
+        <table>
+        <tr>
+            <th>Image</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td><img src="https://img.freepik.com/free-psd/sleek-stainless-steel-french-door-refrigerator_632498-25861.jpg?semt=ais_hybrid&w=740" alt="Refrigerator"></td>
+            <td>Refrigerator</td>
+            <td>1,00,000rs</td>
+            <td><input type="number" name="RefrigeratorQty" min="0"></td>
+        </tr>
+        <tr>
+            <td><img src="https://img.freepik.com/free-psd/realistic-mobile-device-isolated_23-2150427376.jpg?semt=ais_hybrid&w=740" alt="Smart Phone"></td>
+            <td>Smart Phone</td>
+            <td>12,000rs</td>
+            <td><input type="number" name="SmartPhoneQty" min="0"></td>
+        </tr>
+           <tr>
+            <td><img src="https://media.istockphoto.com/id/1463361334/photo/washing-machine.jpg?s=612x612&w=0&k=20&c=XZbX6NeoxSvLldqyOFAm5yh0N-b5933E5wzfGRQtq_U=" alt="Washing Machine"></td>
+            <td>Washing Machine</td>
+            <td>30,000rs</td>
+            <td><input type="number" name="Washing MachineQty" min="0"></td>
+        </tr>
+           <tr>
+            <td><img src="https://img.freepik.com/free-photo/air-conditioner-mounted-white-wall_53876-128235.jpg?semt=ais_hybrid&w=740" alt="Air Conditioner"></td>
+            <td>Air Conditioner</td>
+            <td>32,000rs</td>
+            <td><input type="number" name="AcQty" min="0"></td>
+        </tr>
+         <tr>
+            <td><img src="https://5.imimg.com/data5/AL/SG/EA/SELLER-86610723/oscar-24xl23-24-inch-500x500.jpg" alt="TeleVision"></td>
+            <td>TeleVision</td>
+            <td>27,000rs</td>
+            <td><input type="number" name="TVQty" min="0"></td>
+         </tr>
+        </table>
+        <div class="calci">
+        <button type="button" class="submit">Calculate Total Price</button>
+        </div>
+    </form>
+    
+</body>
+</html>

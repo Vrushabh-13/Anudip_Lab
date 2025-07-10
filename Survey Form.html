@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            font-size: 16px;
+        }
+
+        form{
+            border: 1px solid black;
+            margin: 50px auto;
+            width: 50%;
+            padding: 20px;
+            background-color: lightblue;
+            display: block;
+        }
+        table{
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td{
+            padding: 5px 10px;
+            vertical-align: middle;
+        }
+        td:first-child{
+            text-align: right;
+            white-space:nowrap;
+            width: 30%;
+            font-weight: bold;
+        }
+        td:last-child{
+            text-align: left;
+            width: 70%
+        }
+      
+   
+        
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Survey Form</h1>
+        <table>
+            <hr>
+            <tr>
+                <td style="text-align: left;" >Name :</td>
+                <td><input type="text" Placeholder ="Enter Your Name" style="width:100%;" ></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Email address :</td>
+                <td ><input type="email" Placeholder ="Enter Your Email Address"  style="width:100%;"></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Age :</td>
+                <td><input type="number" Placeholder ="Enter Age in years Only"  style="width:100%;"></td>
+            </tr>
+            <tr>
+                <td><h3>Select known languages :</h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Python">
+                    <input type ="checkbox" value="Python" name="language">Python
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                 <td>
+                    <label for="Java">
+                    <input type ="checkbox" value="Java" name="language">Java
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                 <td>
+                    <label for="JavaScript">
+                    <input type ="checkbox" value="JavaScript" name="language">JavaScript
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                 <td>
+                    <label for="C++">
+                    <input type ="checkbox" value="C++" name="language">C++
+                    </label>
+                </td>
+            </tr>
+             <tr>
+                 <td>
+                    <label for="SQL">
+                    <input type ="checkbox" value="SQL" name="language">SQL
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><h3>Select Known Frameworks :</h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Django">
+                        <input type="checkbox" value="django" name="frameworks">Django
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Flask">
+                        <input type="checkbox" value="Flask" name="frameworks">Flask
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Angular">
+                        <input type="checkbox" value="angular" name="frameworks">Angular
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Express.js">
+                        <input type="checkbox" value="Express.js" name="frameworks">Express.js
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Phalcon">
+                        <input type="checkbox" value="Phalcon" name="frameworks">Phalcon
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><h4>Would you recommend this survey form to a friend?</h4></td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="Feedback" rows="2" cols="20" id="101" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td id="done">
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
